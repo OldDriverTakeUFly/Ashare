@@ -7,6 +7,7 @@ Build a first-stage A-share quantitative research system that supports:
 - strategy signal generation
 - historical backtesting
 - performance analysis and comparison
+- Telegram-based delivery of run status and selected reports
 
 This MVP is for research and validation first, not live auto-trading.
 
@@ -50,20 +51,29 @@ Primary user: the repository owner, an individual trader/developer learning and 
 - turnover
 - excess return vs benchmark
 
+### 4.6 Notification layer
+- support Telegram bot delivery for run lifecycle events
+- support plain-text summary messages for research and backtest completion
+- allow the notification channel to be enabled/disabled by configuration
+- keep bot credentials outside version control
+
 ## 5. Non-goals for MVP
 - broker integration
 - automated live execution
 - real-time streaming engine
 - distributed compute
 - multi-user service deployment
+- interactive Telegram command bot for full strategy control
 
 ## 6. Success criteria
 - one reproducible command or workflow runs a full backtest
 - at least one documented baseline strategy is implemented
 - metrics and plots are generated consistently
 - code and docs are organized enough for iterative strategy research
+- the system can send a Telegram message when a configured research or backtest job finishes
 
 ## 7. Open decisions
 - data source priority: AkShare / Tushare / BaoStock / local vendor exports
 - backtest framework choice: Backtrader vs vectorbt vs custom engine
 - symbol universe definition: broad market, index constituents, or filtered universe
+- Telegram integration scope: notification-only first, command interaction later
