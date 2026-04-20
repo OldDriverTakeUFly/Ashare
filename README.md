@@ -7,7 +7,6 @@ A-share quantitative trading research and system-building workspace.
 - Study existing strategy patterns and distill reusable design principles
 - Build a personal research-to-backtest workflow
 - Evolve toward a maintainable live-trading-ready system
-- Prepare a Telegram bot notification channel for research and system status delivery
 
 ## Development principles
 - Project-local documentation under version control
@@ -32,11 +31,6 @@ A-share quantitative trading research and system-building workspace.
 3. Build a strategy interface and backtest engine wrapper
 4. Add evaluation metrics and reporting
 5. Validate one baseline strategy end-to-end
-6. Prepare a Telegram delivery path for status, alerts, and reports
-
-## Current prep tracks
-- Quant research MVP definition
-- Telegram bot integration preparation
 
 ## Next milestone
-Draft the MVP requirements, architecture, and implementation plan before writing production code for each major subsystem.
+Draft the MVP requirements, architecture, and first implementation plan before writing production code.

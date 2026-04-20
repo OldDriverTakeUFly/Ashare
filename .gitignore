@@ -24,7 +24,6 @@ data/cache/*
 # Environment and secrets
 .env
 .env.*
-!.env.example
 *.sqlite
 *.db
 
